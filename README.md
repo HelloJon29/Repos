@@ -1,2 +1,2 @@
 # Repos
-This repository is for my projects
+This repository for my desktop and laptop
