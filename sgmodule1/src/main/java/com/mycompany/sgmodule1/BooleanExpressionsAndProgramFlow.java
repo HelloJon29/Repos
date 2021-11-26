@@ -9,6 +9,6 @@ package com.mycompany.sgmodule1;
  *
  * @author jonga
  */
-public class BooleanAndExpressions {
+public class BooleanExpressionsAndProgramFlow {
     
 }
