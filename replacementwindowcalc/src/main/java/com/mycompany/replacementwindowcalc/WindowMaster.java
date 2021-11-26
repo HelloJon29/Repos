@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Calculator for Replacement Windows
  *
  */
-public class NewClass {
+public class WindowMaster {
 
     public static void main(String[] args) {
         // Variables for height and width
