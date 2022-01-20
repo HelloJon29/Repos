@@ -15,13 +15,8 @@ public class WindowMaster {
         float glass;
         float trim;
         float numberOfWindows;
-        // String variables for input
-        String stringHeight = null;
-        String stringWidth = null;
-        String stringGlass = null;
-        String stringTrim = null;
-        String stringNumberOfWindows = null;
-        // other variables
+      
+        // other variables will be used for calc values
         float areaOfWindow;
         float cost;
         float perimiterOfWindow;
@@ -29,25 +24,23 @@ public class WindowMaster {
 
         // initialize Scanner
         Scanner myScanner = new Scanner(System.in);
+        
+        // Created a try-catch block using number format exception 
+        // to stop invalid input from user
         try {
-            // get input
-
+            
+            // get input using the scanner and .nextFloat
             System.out.println("Please enter window height");
-            stringHeight = myScanner.nextLine();
+            height = myScanner.nextFloat();
             System.out.println("Please enter window width");
-            stringWidth = myScanner.nextLine();
+            width = myScanner.nextFloat();
             System.out.println("Please enter the cost of the glass");
-            stringGlass = myScanner.nextLine();
+            glass = myScanner.nextFloat();
             System.out.println("Please enter the cost of the trim");
-            stringTrim = myScanner.nextLine();
+            trim = myScanner.nextFloat();
             System.out.println("How many windows?");
-            stringNumberOfWindows = myScanner.nextLine();
-            // convert String to float values
-            height = Float.parseFloat(stringHeight);
-            width = Float.parseFloat(stringWidth);
-            glass = Float.parseFloat(stringGlass);
-            trim = Float.parseFloat(stringTrim);
-            numberOfWindows = Float.parseFloat(stringNumberOfWindows);
+            numberOfWindows = myScanner.nextFloat();
+                      
             //calculate area of window
             areaOfWindow = height * width;
             //calculate perimiter of window
@@ -56,8 +49,8 @@ public class WindowMaster {
             cost = ((glass * areaOfWindow) + (trim * perimiterOfWindow));
             totalWindows = (cost * numberOfWindows);
             //display the results to the user
-            System.out.println("Window height = " + stringHeight);
-            System.out.println("Window width = " + stringWidth);
+            System.out.println("Window height = " + height);
+            System.out.println("Window width = " + width);
             System.out.println("Window area = " + areaOfWindow);
             System.out.println("Window perimiter = " + perimiterOfWindow);
             System.out.println("Total Cost of single window = " + cost);
@@ -67,4 +60,8 @@ public class WindowMaster {
         }
 
     }
+    // Use this method to calculate values and return to main method
+//    public static float calcValues() {
+//        
+//    }
 }
