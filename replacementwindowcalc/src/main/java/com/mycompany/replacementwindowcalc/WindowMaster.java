@@ -10,12 +10,13 @@ public class WindowMaster {
 
     public static void main(String[] args) {
         // Variables for height and width stored with values taken from input function
+        
         float height = input("Please enter window height.");
         float width = input("Please enter window width.");
         float glass = input("Please enter cost of the glass.");
         float trim = input("Please enter cost of the trim.");
         float numberOfWindows = input("How many windows?");
-
+        
         // other variables will be used for calc values
         float areaOfWindow;
         float cost;
@@ -37,7 +38,7 @@ public class WindowMaster {
         results("Window perimiter = " + perimiterOfWindow);
         results("Total Cost of single window = " + cost);
         results("Total Cost of all windows = " + totalWindows);
-
+        
     }
 
     // Use this method to get input values and return to main method
