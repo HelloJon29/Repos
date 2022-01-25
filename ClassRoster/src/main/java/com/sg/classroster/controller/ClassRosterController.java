@@ -22,14 +22,8 @@ public class ClassRosterController {
         boolean keepGoing = true;
         int menuSelection = 0;
         while (keepGoing) {
-            io.print("Main Menu");
-            io.print("1. List Student IDs");
-            io.print("2. Create New Student");
-            io.print("3. View a Student");
-            io.print("4. Remove a Student");
-            io.print("5. Exit");
             
-            menuSelection = io.readInt("Please select from the" + " above choices.", 1, 5);
+            menuSelection = getMenuSelection();
             
             switch (menuSelection) {
                 case 1:
@@ -40,11 +34,13 @@ public class ClassRosterController {
                     break;
                 case 3:
                     io.print("VIEW STUDENT");
+                    break;
                 case 4:
                     io.print("REMOVE STUDENT");
                     break;
                 case 5:
                     keepGoing = false;
+                    break;
                 default:
                     io.print("UNKNOWN COMMAND");
             }
