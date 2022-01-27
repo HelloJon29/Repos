@@ -63,11 +63,6 @@ public class House {
 
     public boolean isRoof() {
         return roof;
-    }
-
-    public void setRoof(boolean roof) {
-        this.roof = roof;
-    }
-    
+    } 
 }
 
