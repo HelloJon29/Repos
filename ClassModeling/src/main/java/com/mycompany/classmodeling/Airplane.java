@@ -28,7 +28,7 @@ public class Airplane {
         this.seats = seats;
         this.windows = windows;
     }
-    // Getters and setters or as Mo calls them, "Helper functions"
+    // Getters and setters
     public String getBody() {
         return body;
     }

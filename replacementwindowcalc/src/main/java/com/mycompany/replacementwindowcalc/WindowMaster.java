@@ -7,8 +7,8 @@ import java.util.Scanner;
  *
  */
 public class WindowMaster {
-
-    public static void main(String[] args) {
+    // Refactored program to have only a run method function
+    public void logic(){
         // Variables for height and width stored with values taken from input function
         
         float height = input("Please enter window height.");
@@ -42,7 +42,7 @@ public class WindowMaster {
     }
 
     // Use this method to get input values and return to main method
-    public static float input(String prompt) {
+    public float input(String prompt) {
         // Iitialize Scanner
         Scanner scanner = new Scanner(System.in);
 
@@ -53,10 +53,9 @@ public class WindowMaster {
         return value;
 
     }
-    // Add While loop here to catch errors instead of try-catch
-    
-    // Use this method to call println for the results in the main method
-    public static void results(String text) {
+
+    // Use this method to use println for the results in the main method
+    public void results(String text) {
         System.out.println(text);
     }
 }
