@@ -42,7 +42,7 @@ public class WindowMaster {
     }
 
     // Use this method to get input values and return to main method
-    public float input(String prompt) {
+    private float input(String prompt) {
         // Iitialize Scanner
         Scanner scanner = new Scanner(System.in);
 
@@ -55,7 +55,7 @@ public class WindowMaster {
     }
 
     // Use this method to use println for the results in the main method
-    public void results(String text) {
+    private void results(String text) {
         System.out.println(text);
     }
 }
